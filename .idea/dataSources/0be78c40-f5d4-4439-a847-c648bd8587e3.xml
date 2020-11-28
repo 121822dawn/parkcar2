@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="park@localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.14">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <database id="2" parent="1" name="information_schema"/>
+    <database id="3" parent="1" name="login"/>
+    <database id="4" parent="1" name="mobilemanager"/>
+    <database id="5" parent="1" name="myatm"/>
+    <database id="6" parent="1" name="myschool"/>
+    <database id="7" parent="1" name="myschool1"/>
+    <database id="8" parent="1" name="mysql"/>
+    <database id="9" parent="1" name="news"/>
+    <database id="10" parent="1" name="park">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="11" parent="1" name="petshop"/>
+    <database id="12" parent="1" name="sms"/>
+    <database id="13" parent="1" name="tenancy"/>
+    <database id="14" parent="1" name="test"/>
+    <schema id="15" parent="10">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="16" parent="15" name="park"/>
+    <column id="17" parent="16" name="id">
+      <Position>1</Position>
+      <Comment>编号</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="16" name="license_number">
+      <Position>2</Position>
+      <Comment>车牌号</Comment>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="19" parent="16" name="putin">
+      <Position>3</Position>
+      <Comment>入库时间</Comment>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <column id="20" parent="16" name="putout">
+      <Position>4</Position>
+      <Comment>出库时间</Comment>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <column id="21" parent="16" name="money">
+      <Position>5</Position>
+      <Comment>价格</Comment>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="22" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
